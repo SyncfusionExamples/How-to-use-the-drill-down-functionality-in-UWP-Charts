@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="ChartDemo.SecondPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <syncfusion:SfChart  Height="300" Width="500">
+            <syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:CategoryAxis>
+                </syncfusion:CategoryAxis>
+            </syncfusion:SfChart.PrimaryAxis>
+            <syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:NumericalAxis/>
+            </syncfusion:SfChart.SecondaryAxis>
+            <!--desired series declaration with populating the specific collection-->
+            <syncfusion:SfChart.Series>
+                <syncfusion:ColumnSeries XBindingPath="Type" YBindingPath="Value" ItemsSource="{x:Bind SelectedModel.Collections}" Palette="BlueChrome">
+                    <syncfusion:ColumnSeries.AdornmentsInfo>
+                       <syncfusion:ChartAdornmentInfo/>
+                    </syncfusion:ColumnSeries.AdornmentsInfo>
+                </syncfusion:ColumnSeries>
+            </syncfusion:SfChart.Series>
+        </syncfusion:SfChart>
+    </Grid>
+</Page>

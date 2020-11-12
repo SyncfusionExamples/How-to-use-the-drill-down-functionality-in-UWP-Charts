@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="ChartDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    mc:Ignorable="d">
+    
+    <Page.DataContext>
+        <local:ViewModel x:Name="viewModel"/>
+    </Page.DataContext>
+
+    <Grid x:Name="grid">
+        <syncfusion:SfChart SelectionChanged="chart_SelectionChanged" Height="300" Width="500">
+            <!--Definition of legend-->
+            <syncfusion:SfChart.Legend>
+                <syncfusion:ChartLegend/>
+            </syncfusion:SfChart.Legend>
+            <!--To enable the selection support-->
+            <syncfusion:SfChart.Behaviors>
+                <syncfusion:ChartSelectionBehavior EnableSegmentSelection="True" />
+            </syncfusion:SfChart.Behaviors>
+            <!--Series declaration-->
+            <syncfusion:PieSeries ItemsSource="{Binding Data}" Palette="AutumnBrights" XBindingPath="Type" YBindingPath="Value" >
+                <syncfusion:PieSeries.AdornmentsInfo>
+                    <syncfusion:ChartAdornmentInfo  ShowLabel="True" />
+                </syncfusion:PieSeries.AdornmentsInfo>
+            </syncfusion:PieSeries>
+        </syncfusion:SfChart>
+    </Grid>
+</Page>
