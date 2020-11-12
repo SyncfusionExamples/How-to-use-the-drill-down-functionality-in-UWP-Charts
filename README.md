@@ -91,7 +91,7 @@ public sealed partial class SecondPage : Page
 ```
 # Output
  
-![](Output.png)
+![](Output.gif)
 
 ## See also
 
