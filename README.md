@@ -90,7 +90,7 @@ public sealed partial class SecondPage : Page
     }
 ```
 ## Output
-![drill](https://github.com/user-attachments/assets/51f36139-35c1-4175-8784-63ca87d2292b)
+![Output gif demonstrating the drill down functionality](https://github.com/user-attachments/assets/51f36139-35c1-4175-8784-63ca87d2292b)
 
 ## See also
 
