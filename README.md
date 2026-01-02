@@ -103,3 +103,11 @@ public sealed partial class SecondPage : Page
 
 [How to bind the JSON data in UWP Chart](https://www.syncfusion.com/kb/11628/how-to-bind-the-json-data-in-uwp-chart)
 
+## Troubleshooting
+
+### Path Too Long Exception
+
+If you are facing a "Path too long" exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
+
+Refer to the Knowledge Base article [How to achieve drill-down functionality in UWP Charts?](https://support.syncfusion.com/kb/article/5938/how-to-achieve-drill-down-functionality-in-uwp-charts).
+
