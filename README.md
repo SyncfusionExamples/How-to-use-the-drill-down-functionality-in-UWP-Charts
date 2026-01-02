@@ -1,4 +1,4 @@
-# How-to-use-the-drill-down-functionality-in-UWP-Charts
+# How to use the drill-down functionality in UWP Charts?
 
 The drill-down is a capability that takes the user from a more general view of the data to a more specific one at the click of a mouse. It also gives the user the ability to see data and information in more detail with different styles. 
 
