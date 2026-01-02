@@ -90,8 +90,7 @@ public sealed partial class SecondPage : Page
     }
 ```
 ## Output
- 
-![](Output.gif)
+![drill](https://github.com/user-attachments/assets/51f36139-35c1-4175-8784-63ca87d2292b)
 
 ## See also
 
