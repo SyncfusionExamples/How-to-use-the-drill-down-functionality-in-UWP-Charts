@@ -1,4 +1,4 @@
-# How-to-use-the-drill-down-functionality-in-UWP-Charts
+# How to use the drill-down functionality in UWP Charts?
 
 The drill-down is a capability that takes the user from a more general view of the data to a more specific one at the click of a mouse. It also gives the user the ability to see data and information in more detail with different styles. 
 
@@ -90,8 +90,7 @@ public sealed partial class SecondPage : Page
     }
 ```
 ## Output
- 
-![](Output.gif)
+![Output gif demonstrating the drill down functionality](https://github.com/user-attachments/assets/51f36139-35c1-4175-8784-63ca87d2292b)
 
 ## See also
 
@@ -102,4 +101,12 @@ public sealed partial class SecondPage : Page
 [How to bind the SQL Database in UWP Chart](https://www.syncfusion.com/kb/11664/how-to-bind-the-sql-database-in-uwp-chart)
 
 [How to bind the JSON data in UWP Chart](https://www.syncfusion.com/kb/11628/how-to-bind-the-json-data-in-uwp-chart)
+
+## Troubleshooting
+
+### Path Too Long Exception
+
+If you are facing a "Path too long" exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
+
+Refer to the Knowledge Base article [How to achieve drill-down functionality in UWP Charts?](https://support.syncfusion.com/kb/article/5938/how-to-achieve-drill-down-functionality-in-uwp-charts).
 
